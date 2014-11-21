@@ -897,7 +897,7 @@
 			this.draw();
 			if (ChartElements.length > 0){
 				// If we have multiple datasets, show a MultiTooltip for all of the data points at that index
-				if (this.datasets && this.datasets.length > 1) {
+				if ((this.datasets && this.datasets.length > 1) && (this.__proto__.name !== "Scatterplot")) {
 					var dataArray,
 						dataIndex;
 
